@@ -1,5 +1,6 @@
 export default {
-  target: 'static', // default is 'server'
+  ssr: true,
+  target: "static", // default is 'server'
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Challenge - Figma Prototype',
@@ -36,11 +37,14 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    ['@nuxtjs/google-fonts', {
-      families: {
-        Manrope: true,
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Manrope: true,
+        },
       },
-    }]
+    ],
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -52,5 +56,5 @@ export default {
   googleFonts: {
     preload: true,
     useStylesheet: true,
-  }
+  },
 }
