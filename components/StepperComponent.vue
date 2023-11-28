@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex justify-center">
     <div
-      class="w-5/6 h-10 mt-[3.75rem] justify-between items-center inline-flex"
+      class="mx-[7.75rem] w-full h-10 mt-[3.75rem] justify-between items-center inline-flex"
     >
       <div class="justify-start items-center gap-5 flex">
         <div
