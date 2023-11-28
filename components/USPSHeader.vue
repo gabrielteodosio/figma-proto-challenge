@@ -2,39 +2,33 @@
 <template>
   <div :class="[$style.usps]">
     <div>
-      <USPSCheckmarkIcon />
+      <Icon icon="fluent:checkmark-starburst-20-regular" />
       <span :class="[$style.uspsText]">30-DAY SATISFACTION GUARANTEE</span>
     </div>
     <div>
-      <USPSTruckIcon />
+      <Icon icon="ph:truck-light" />
       <span :class="[$style.uspsText]">
         Free delivery on orders over $40.00
       </span>
     </div>
     <div>
-      <USPSHeartIcon />
+      <Icon icon="mdi:cards-heart-outline" />
       <span :class="[$style.uspsText]">50.000+ HAPPY CUSTOMERS</span>
     </div>
     <div>
-      <USPSArrowSyncIcon />
+      <Icon icon="fluent:arrow-sync-checkmark-20-regular" />
       <span :class="[$style.uspsText]">100% Money Back Guarantee</span>
     </div>
   </div>
 </template>
 
 <script>
-import USPSHeartIcon from './Icons/USPSHeartIcon.vue'
-import USPSTruckIcon from './Icons/USPSTruckIcon.vue'
-import USPSArrowSyncIcon from './Icons/USPSArrowSyncIcon.vue'
-import USPSCheckmarkIcon from './Icons/USPSCheckmarkIcon.vue'
+import { Icon } from '@iconify/vue2'
 
 export default {
   name: 'USPSHeader',
   components: {
-    USPSHeartIcon,
-    USPSTruckIcon,
-    USPSCheckmarkIcon,
-    USPSArrowSyncIcon,
+    Icon,
   },
 }
 </script>
@@ -59,6 +53,9 @@ export default {
 
 .usps > div > svg {
   margin-right: 8px;
+  color: white;
+  width: 22px;
+  height: 22px;
 }
 
 .uspsText {
