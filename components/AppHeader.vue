@@ -29,12 +29,3 @@ export default {
   components: {},
 }
 </script>
-
-<style module>
-.HeaderContainer {
-  background-color: red;
-}
-
-.HeaderLogo {
-}
-</style>
