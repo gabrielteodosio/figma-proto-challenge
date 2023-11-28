@@ -1,21 +1,23 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div class="usps">
+  <div :class="[$style.usps]">
     <div>
       <USPSCheckmarkIcon />
-      <span class="usps-text">30-DAY SATISFACTION GUARANTEE</span>
+      <span :class="[$style.uspsText]">30-DAY SATISFACTION GUARANTEE</span>
     </div>
     <div>
       <USPSTruckIcon />
-      <span class="usps-text">Free delivery on orders over $40.00</span>
+      <span :class="[$style.uspsText]">
+        Free delivery on orders over $40.00
+      </span>
     </div>
     <div>
       <USPSHeartIcon />
-      <span class="usps-text">50.000+ HAPPY CUSTOMERS</span>
+      <span :class="[$style.uspsText]">50.000+ HAPPY CUSTOMERS</span>
     </div>
     <div>
       <USPSArrowSyncIcon />
-      <span class="usps-text">100% Money Back Guarantee</span>
+      <span :class="[$style.uspsText]">100% Money Back Guarantee</span>
     </div>
   </div>
 </template>
@@ -37,7 +39,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style module>
 .usps {
   background-color: #252f3d;
   width: 100vw;
@@ -59,7 +61,7 @@ export default {
   margin-right: 8px;
 }
 
-.usps-text {
+.uspsText {
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
 
   color: #ffffff;
