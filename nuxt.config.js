@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'Challenge - Figma Prototype',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'pt-BR',
     },
     meta: [
       { charset: 'utf-8' },
@@ -35,6 +35,11 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Manrope: true,
+      },
+    }]
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -42,4 +47,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  googleFonts: {
+    preload: true,
+    useStylesheet: true,
+  }
 }
