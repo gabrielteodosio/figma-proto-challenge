@@ -15,6 +15,8 @@
     </h2>
 
     <StepperComponent />
+
+    <AppFooter />
   </div>
 </template>
 
@@ -22,11 +24,12 @@
 import Vue from 'vue'
 
 import AppHeader from '~/components/AppHeader.vue'
+import AppFooter from '~/components/AppFooter.vue'
 import USPSHeader from '~/components/USPSHeader.vue'
 import StepperComponent from '~/components/StepperComponent.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: { USPSHeader, AppHeader, StepperComponent },
+  components: { USPSHeader, AppHeader, StepperComponent, AppFooter },
 })
 </script>
